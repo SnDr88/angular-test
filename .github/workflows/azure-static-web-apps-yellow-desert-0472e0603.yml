@@ -39,5 +39,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/" # root van je project
-          output_location: "dist/angular-test" # outputmap waar index.html staat
+          output_location: "dist/angular-test/browser" # outputmap waar index.html staat
           routes_location: "src" # bevat routes.json
