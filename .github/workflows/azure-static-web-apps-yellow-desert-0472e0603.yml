@@ -19,6 +19,8 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
       - name: Build Angular app for Azure
         run: npm run build -- --configuration production --base-href /
       - name: Build And Deploy
