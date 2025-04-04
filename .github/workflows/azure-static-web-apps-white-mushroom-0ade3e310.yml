@@ -31,7 +31,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/" # waar je Angular code staat
-          output_location: "dist/angular-test" # build-map
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
